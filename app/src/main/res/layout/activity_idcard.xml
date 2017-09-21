@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_idcard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".IDCardActivity">
+
+    <Button
+        android:id="@+id/gallery_button_front"
+        style="@style/id_card_btn_style"
+        android:text="相册选择 正面"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/gallery_button_back"
+        style="@style/id_card_btn_style"
+        android:text="相册选择 反面"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/id_card_front_btn"
+        style="@style/id_card_btn_style"
+        android:text="身份证正面" />
+
+    <Button
+        android:id="@+id/id_card_front_btn_native"
+        style="@style/id_card_btn_style"
+        android:text="身份证正面(本地质量控制)" />
+
+    <Button
+        android:id="@+id/id_card_back_btn"
+        style="@style/id_card_btn_style"
+        android:text="身份证反面" />
+
+    <Button
+        android:id="@+id/id_card_back_btn_native"
+        style="@style/id_card_btn_style"
+        android:text="身份证反面(本地质量控制)" />
+
+    <TextView
+        android:id="@+id/info_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="姓名:" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#008cff"
+            android:layout_marginStart="120dp"
+            tools:text="张三" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="身份证号:" />
+
+        <TextView
+            android:id="@+id/id_number_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#008cff"
+            android:layout_marginStart="120dp"
+            tools:text="510xxxxx" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="有效日期:" />
+
+        <TextView
+            android:id="@+id/effective_date_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#008cff"
+            android:layout_marginStart="120dp"
+            tools:text="2017.01.01" />
+    </RelativeLayout>
+
+</LinearLayout>
